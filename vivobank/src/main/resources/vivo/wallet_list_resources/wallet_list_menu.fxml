@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" styleClass="parent" stylesheets="@wallet_list_menu.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vivo.controllers.WalletListMenuController">
+  <center>
+    <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <children>
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" stylesheets="@wallet_list_menu.css" AnchorPane.bottomAnchor="550.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="0.0">
+          <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="My wallets">
+              <font>
+                <Font name="System Bold" size="20.0" />
+              </font>
+            </Label>
+          </children>
+          <styleClass>
+            <String fx:value="upper_pane" />
+            <String fx:value="shadow" />
+          </styleClass>
+        </VBox>
+        <ScrollPane fx:id="scrollPane" hbarPolicy="NEVER" layoutX="400.0" layoutY="200.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="65.0">
+          <content>
+            <GridPane fx:id="gridPane" prefHeight="0.0" prefWidth="0.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+            </GridPane>
+          </content>
+        </ScrollPane>
+            <Button fx:id="backButton" layoutX="474.0" layoutY="561.0" mnemonicParsing="false" onMouseClicked="#backButtonPressed" prefHeight="41.0" prefWidth="83.0" styleClass="button_style" stylesheets="@wallet_list_menu.css" text="Back" textFill="WHITE" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="470.0" AnchorPane.rightAnchor="470.0" AnchorPane.topAnchor="550.0" />
+      </children>
+    </AnchorPane>
+  </center>
+</BorderPane>

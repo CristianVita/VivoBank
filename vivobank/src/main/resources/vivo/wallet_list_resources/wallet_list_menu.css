@@ -1,0 +1,63 @@
+.parent {
+    -fx-background-color: #e6ccff;
+}
+
+.upper_pane {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 0px 0px 30px 30px;
+}
+
+.scroll-pane {
+    -fx-background: #e6ccff;
+    -fx-border-color: #e6ccff;
+    -fx-background-color: transparent;
+}
+
+.wallet {
+    -fx-background-color: linear-gradient(to right, #400083, #4d397e);
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+}
+
+.wallet_name {
+    -fx-alignment: center;
+}
+
+.wallet_amount {
+    -fx-padding: 10px;
+}
+
+.wallet_code {
+    -fx-padding: 10px;
+}
+
+.shadow {
+    -fx-effect: dropShadow(three-pass-box, rgba(0,0,0,0.1), 10.0, 0.0, 0.0, 10.0);
+}
+
+.button_style {
+
+    -fx-background-color: linear-gradient(to bottom,  #b3b3ff, #a4a4fd);
+    -fx-effect: dropShadow(three-pass-box, rgba(0,0,0,0.1), 10.0, 0.0, 0.0, 10.0);
+    -fx-border-color: #a4a4fd;
+    -fx-text-fill: white;
+    -fx-text-alignment: center;
+    -fx-background-radius: 5px 5px 5px 5px;
+    -fx-border-radius: 5px 5px 5px 5px;
+    -fx-transition-duration: 0.4s;
+
+}
+
+.button_style:hover {
+  -fx-background-color: #6C53A5;
+}
+
+
+
+.button_style:pressed {
+  -fx-background-color: #FEE9FF;
+   -fx-border-color: #FEE9FF;
+   -fx-text-fill: black;
+}
+
+

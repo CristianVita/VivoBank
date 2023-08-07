@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vivo.controllers.Log_RegController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="479.0" style="-fx-background-color: #b3b3ff;">
+         <children>
+            <Text fill="WHITE" layoutX="125.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VIVO BANK">
+               <font>
+                  <Font size="45.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+      <AnchorPane layoutX="479.0" prefHeight="600.0" prefWidth="522.0">
+         <children>
+            <TextField fx:id="username_field" layoutX="163.0" layoutY="210.0" promptText="User name" style="-fx-background-color: transparent; -fx-border-color: #e6ccff; -fx-border-width: 0px 0px 2.5px 0px;">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </TextField>
+            <Button fx:id="login_button" layoutX="198.0" layoutY="399.0" mnemonicParsing="false" onAction="#pushLoginButton" prefHeight="41.0" prefWidth="83.0" styleClass="button_style" stylesheets="@wallet_list_resources/wallet_list_menu.css" text="Login" textFill="WHITE" />
+            <TextField fx:id="cnp_field" layoutX="162.0" layoutY="331.0" promptText="CNP" style="-fx-background-color: transparent; -fx-border-color: #e6ccff; -fx-border-width: 0px 0px 2.5px 0px;">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </TextField>
+            <Button fx:id="reg_button" layoutX="198.0" layoutY="470.0" mnemonicParsing="false" onAction="#pushRegisterButton" prefHeight="41.0" prefWidth="83.0" styleClass="button_style" stylesheets="@wallet_list_resources/wallet_list_menu.css" text="Register" textFill="WHITE" />
+            <Label fx:id="attentionLabel" layoutX="41.0" layoutY="529.0" prefHeight="41.0" prefWidth="445.0" style="-fx-background-color: transparent;" />
+            <Text fill="#b674f8" layoutX="136.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USER LOGIN/REGISTER" textAlignment="CENTER" wrappingWidth="195.13671875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <PasswordField fx:id="pass_field" layoutX="160.0" layoutY="275.0" prefHeight="25.0" prefWidth="160.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #e6ccff; -fx-border-width: 0px 0px 2.5px 0px;">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </PasswordField>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>
